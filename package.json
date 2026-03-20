@@ -1,0 +1,44 @@
+{
+  "name": "opencode-gemini-tools",
+  "version": "0.0.1",
+  "author": {
+    "name": "Alex Grad",
+    "email": "alex@grad.dev",
+    "url": "https://grad.dev"
+  },
+  "description": "A plugin for the OpenCode that enables Google Gemini's built-in tools: Google Search, Google Maps, URL Context, and Code Execution",
+  "keywords": [
+    "opencode",
+    "gemini",
+    "google",
+    "google-search",
+    "google-maps",
+    "url-context",
+    "code-execution"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graddotdev/opencode-gemini-tools.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "prepublishOnly": "bun run build",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.9.3"
+  }
+}
