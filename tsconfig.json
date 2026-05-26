@@ -9,6 +9,7 @@
     "moduleDetection": "force",
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
+    "types": ["bun"],
 
     /* Strictness */
     "strict": true,
@@ -16,7 +17,8 @@
     "noImplicitOverride": true,
 
     /* If transpiling with TypeScript: */
-    "module": "NodeNext",
+    "rootDir": "src",
+    "module": "Preserve",
     "outDir": "dist",
     "sourceMap": true,
 
@@ -24,6 +26,7 @@
     "declaration": true,
 
     /* If your code doesn't run in the DOM: */
-    "lib": ["es2022"],
+    "lib": ["es2022"]
   },
+  "files": ["./src/index.ts"]
 }

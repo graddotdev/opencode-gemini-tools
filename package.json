@@ -1,6 +1,6 @@
 {
   "name": "opencode-gemini-tools",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": {
     "name": "Alex Grad",
     "email": "alex@grad.dev",
@@ -38,6 +38,7 @@
   },
   "prepublishOnly": "bun run build",
   "devDependencies": {
+    "@biomejs/biome": "2.4.15",
     "@types/bun": "latest",
     "typescript": "^5.9.3"
   }
